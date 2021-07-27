@@ -1,0 +1,122 @@
+:root{
+    --font-face: 'Saira';
+    --bgcolor : #020201;
+    --main-clr : #AD8C2B;
+
+}
+@media screen and (min-width:800px){
+   body{
+       height: 100%;
+       width: 100%;
+       font-family: var(--font-face);
+       color: var(main-clr);
+       padding: 0;
+       margin: 0;
+   }
+   a.logo{
+       color: var(--main-clr);
+       font-weight: bold;
+   }
+   nav a{
+       color: white;
+       text-decoration: none;
+       font-size: small;
+   }
+   nav{
+       background: var(--bgcolor);
+       height: 100px;
+       margin: 0;
+       width: 100%;
+   }
+   a:hover{
+       color: var(--main-clr);
+   }
+   div.navbar{
+     padding: 70px 20% 0px 20%;
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: 40% 10% 10% 10% 10% 10% 10%;
+     grid-template-rows: repeat(1, auto);
+   }
+   div.notify-banner{
+       display:grid;
+       height: 50px;
+       background-color: #1D1D1F;
+       text-align: center;
+       color: white;
+   }
+   div.main-login-body{
+       background-color:#2B2B30;
+       height: 100%;
+       color: white;
+       padding: 10% 10% 10% 10%;
+       text-align: center;
+        display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(1, auto);
+  }
+  img#user-img{
+      width: 30%;
+      height: 50%;
+  }
+  img.tick-icon{
+      width:30%;
+      height: 40%;
+  }
+  button.dashboard-btn, .google-login-btn{
+      height: 50px;
+      width: 40%;
+      border: none;
+      border-radius: 10px;
+  }
+  div.counter{
+      text-align: center;
+      width: 30%;
+      height: 50%;
+      border-width: 50px;
+      border-style: solid;
+      border-color: var(--main-clr);
+      border-radius: 50%;
+      transform: translateX(50%);
+  }
+  span.loginhere{
+      color: var(--main-clr);
+      font-weight: bold;
+      font-size: 30px;
+    }
+    div.announcement-body{
+        text-align:center;
+        padding-top: 10%;
+        padding-left:20%;
+        padding-right:20%;
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-template-rows: auto;
+        grid-gap: 30px;
+    }
+    div.announcement-tile{
+        text-align: left;
+        padding: 10px;
+        padding-left: 30px;
+        background-color: whitesmoke;
+        color: black;
+        width: 100%;
+        border-radius: 5px;
+        height: 200px;
+        z-index:1;
+    }
+    div.announcement-tile p{
+        font-size: small;
+    }
+    div.about-body{
+        padding: 10%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    div.content img{
+        width: 50%;
+        height:80%;
+    }
+}
